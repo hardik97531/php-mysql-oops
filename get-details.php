@@ -6,7 +6,6 @@
     $id = $crud->escape_string($_GET['id']);
     //selecting data associated with this particular id
     $result = $crud->getData("SELECT * FROM MyGuests WHERE id=$id");
-    
     $data = array(
         'firstname' => $result[0]['firstname'],
         'lastname' => $result[0]['lastname'],
